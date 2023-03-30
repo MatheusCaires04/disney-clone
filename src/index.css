@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Metropolis Regular";
+  src: url("/assets/Metropolis/Metropolis-Regular.otf");
+}
+@font-face {
+  font-family: "Metropolis Light";
+  src: url("/assets/Metropolis/Metropolis-Light.otf");
+}
+@font-face {
+  font-family: "Metropolis Medium";
+  src: url("/assets/Metropolis/Metropolis-Medium.otf");
+}
+@font-face {
+  font-family: "Metropolis Bold";
+  src: url("/assets/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: "Metropolis ExtraBold";
+  src: url("/assets/Metropolis/Metropolis-ExtraBold.otf");
+}
+
+@layer base {
+  body {
+    font-family: "Metropolis Regular", sans-serif;
+    @apply bg-nav-pos-scroll;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-3 py-2 md:px-5 md:py-2 border-[1px] rounded-sm text-sm md:text-base text-text-btn tracking-wider font-Metropolis-light duration-150;
+  }
+
+  .bg__hero {
+    @apply bg-image-hero bg-no-repeat absolute top-0 left-0 right-0 bottom-0 object-cover z-0;
+  }
+
+  .trace {
+    @apply bg-bg-trace;
+  }
+  .check {
+    @apply bg-bg-check;
+  }
+  .padding__plan {
+    @apply py-5;
+  }
+  .bg__plan {
+    @apply bg-[#1d1f2b];
+  }
+  .bg__check__trace {
+    @apply bg-no-repeat bg-center;
+  }
+}
