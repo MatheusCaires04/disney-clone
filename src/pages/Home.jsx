@@ -302,7 +302,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="py-20 max-w-max-container px-4 md:px-0">
+      <div className="py-20 max-w-max-container mx-auto px-4 md:px-0">
         <h2 className="text-white text-2xl md:text-4xl font-Metropolis-extrabold text-center">
           Disponível nos seus dispositivos favoritos
         </h2>
